@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Art Prompt Generator </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="splash">  
+            <div class="splash-lines">
+                <svg width="349" height="358" viewBox="0 0 349 358" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="pen-path" d="M35.5 1L31.5 106.5C34.5 154.5 57.5 196 80.5 170L95.5 145C107.5 113 78.4 122 28 122C-35 122 114.5 225 74.5 225C-35.6465 225 137 164.5 74.5 164.5C-60.0706 164.5 67.0001 277 11.5 150.5C6.7081 139.578 -21.5 209.5 64.5 203.5C133.3 198.7 133.5 189.5 143.5 175.5C157.5 161.5 180 177.333 189.5 187L200 238L225.5 256.889M227 258C241.5 295.5 289 326.5 308.5 346.5C321 361 335.667 353 340.5 348C350 336 345.5 325 338.5 317C319.5 294 301.833 268.667 293.5 258C291 254.8 290.938 254.5 287 250C283.063 245.5 283.225 245.759 279.5 242.5C275.5 239 271 234.705 258.5 229.705M227 258L258.5 229.705M227 258L225.5 256.889M258.5 229.705L257.5 229M225.5 256.889L257.5 229M257.5 229L241.5 201L189 186.5" stroke="#175676" stroke-width="5"/>
+                </svg>  
+            </div>
+            <div class="page-title"> art prompt generator </div>
+            <div class="btn" id="splash-btn" onclick="AnimatePen()"> <h5> generate art prompts </h5> </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="left-container">
+                <h1> art prompt generator </h1>
+                <div class="btn" onclick="GetPrompt(0)"> <h5> generate new prompt </h5> </div>
+                <div class="btn" onclick="GetPrompt(1)"> <h5> generate animal prompt </h5> </div>
+                <div class="btn" onclick="ResetMain()"> <h5> reset page </h5> </div>
+            </div>
+            <div class="right-container">
+                <div class="lines-container">
+                    <svg width="471" height="899" viewBox="0 0 471 899" fill="none">
+                        <path id="easel-path" d="M236.106 105.599V97.0513V0M236.106 105.599C246.048 108.708 250.859 126.839 250.859 139.014M236.106 105.599C223.529 106.376 223.529 118.81 223.529 138.285M250.859 139.014C365.006 146.008 391.408 152.224 404.609 163.103C404.609 207.863 404.608 504.501 404.608 655.773C402.745 655.773 387.266 657.846 379.76 658.882M250.859 139.014C240.033 138.467 233.226 138.243 223.529 138.285M379.76 658.882L463.623 865.585C466.729 875.688 469.059 885.012 467.506 892.006C465.953 896.669 463.623 899 459.741 899C451.937 899 440.328 885.79 434.116 874.133L350.253 661.213M379.76 658.882L350.253 661.213M350.253 661.213L297.45 664.321L250.707 665.098M250.707 665.098C250.707 665.098 249.154 730.373 250.707 754.463C252.26 778.552 250.707 796.425 239.059 796.425C226.635 796.425 221.199 766.896 221.199 754.463C221.199 739.515 218.87 702.398 218.87 699.29V665.098M250.707 665.098H218.87M218.87 665.098L121.182 664.321M121.182 664.321L73.0384 789.431L40.4249 862.477C24.8951 892.783 7.81196 899 3.92941 886.567C1.5999 878.796 3.92951 873.356 7.81194 857.815L86.2396 661.99M121.182 664.321C107.982 664.321 95.5577 663.544 86.2396 661.99M86.2396 661.99C80.804 661.083 73.0389 658.882 70.7094 657.328C67.6034 623.913 77.698 156.11 78.4745 150.67C103.323 139.791 126.618 141.345 149.913 139.791C182.784 139.083 201.336 138.591 214.211 138.386M214.211 138.386C217.671 138.331 220.721 138.297 223.529 138.285M214.211 138.386L223.529 138.285" stroke="#175676" stroke-width="5"/>
+                    </svg>  
+                </div>
+                <div class="response-container"> 
+                    <div id="prompt-text">
+                        <h3> create: </h3>
+                    </div>  
+                    <div id="adj-resp">
+                       
+                    </div>             
+                    <div id="noun-resp">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="bottom-link" href="./about.html">
+            <h6> about </h6>
+        </a>
+        <script src="main.js"></script>
+    </body>
+</html>
